@@ -1,0 +1,19 @@
+<h1>Hello {{target}}!</h1>
+<!--
+There are a few Angular 2 directives that require the usage of a template element, for
+example, ngForOf, ngIf, and ngSwitch. Since such directives are used often, there's
+an alternative syntax for them. Instead of typing down the entire template element
+explicitly, we can simply prefix the directive with *. This will allow us to turn our
+ngForOf directive syntax usage into the following:
+-->
+<p>
+Here's a list of the things you need to do:
+</p>
+<ul>
+<!--
+The * character allows you to remove the template element and put the
+directive directly on the root of the template element (in the preceding
+example, the list item, li).
+-->
+<li *ngFor="#todo of todos">{{todo}}</li>
+</ul>
