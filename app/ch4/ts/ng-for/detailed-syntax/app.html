@@ -1,0 +1,18 @@
+<h1>Hello {{target}}!</h1>
+<!--
+The template element is a place where we can hold markup and make
+sure that it won't be rendered by the browser. This is quite useful if we
+need to embed the templates of our application directly into the markup
+of the page and let the template engine we're using to process them later.
+In the current example, this means that if the Angular 2 DOM compiler
+doesn't process the DOM tree, all we're going to see on the screen are the
+h1, p elements and the ul element without any list items.
+-->
+<p>
+Here's a list of the things you need to do:
+</p>
+<ul>
+<template ngFor var-todo [ngForOf]="todos">
+<li>{{todo}}</li>
+</template>
+</ul>

@@ -1,4 +1,12 @@
 <!-- ch4/ts/hello-world/index.html -->
+<!-- the inject css and inject js will let gulp to know where he should add the script -->
+<!--
+The preceding HTML file defines the basic structure of our page. Just before closing
+the body tag, we have references to four script files: the polyfills required by the
+framework (including ES2015 shim, zone.js, and others), RxJS, the ES5 bundle of
+Angular 2, and the file that contains the application we're going to build.
+-->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,6 +19,12 @@
 <!-- endinject -->
 </head>
 <body>
+<!--
+use the root
+component anywhere inside index.html. In order to finish the application, add the
+following HTML element after the open tag of the body element:
+<app></app>
+-->
 <app>Loading...</app>
 <!-- inject:js -->
 <!-- endinject -->
